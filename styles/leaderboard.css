@@ -58,6 +58,7 @@ header .anchore-profile{
 /*  */
 
 
+
 .top-blog a{
     text-decoration: none;
 }
@@ -91,15 +92,18 @@ body{
 /* container-----------
 --------------------- */
 .container{
-    width: 870px;
+    
     background-color: white;
     display: flex;
+    justify-content: center;
 
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    margin-left: 200px;
-    margin-top: 20px;
+    margin: 20px auto;
+    width: 870px;
+    
+    
+    
 
     
 }
@@ -112,7 +116,7 @@ body{
         margin: 10px 0;
     }
     .top-player .players{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding: 0;
     }
     .top-blog .blog{
@@ -125,6 +129,10 @@ body{
     .top-blog h2{
         text-align: center;
     }
+    .top-blog img{
+        width: 100%;
+    }
+
 }
 @media screen and (min-width:577px) and (max-width:1000px){
     .container{
@@ -184,6 +192,7 @@ body{
     background-color: wheat;
     border: 1px solid wheat;
     border-radius: 10px;
+    
     
     
 
