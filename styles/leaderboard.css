@@ -1,0 +1,210 @@
+/* styles of header----------
+--------------------------------- */
+header{
+    background-color: blueviolet;
+    display: flex;
+    color: white;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 5px 0; */
+    
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header .icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .anchore-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+/* meadia quiry for header */
+@media screen and (max-width:576px){
+    header{
+        width: 100%;
+    }
+}
+
+/* styles for top players-----------
+----------------------------- */
+.top-player img{
+    width: 40px;
+}
+.top-player .players{
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0;
+}
+.players>div{
+    display: flex;
+    gap: 10px;
+    padding: 0 60px;
+}
+.top-player h2{
+    padding:0 60px;
+}
+
+
+/* style of top blog part-------------
+------------------------------------- */
+/*  */
+
+
+.top-blog a{
+    text-decoration: none;
+}
+.top-blog img{
+    width: 150px;
+}
+.top-blog h5{
+    color: gray;
+}
+.img-writing{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.top-blog .blog{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+}
+.top-blog{
+    padding: 20px 60px;
+    
+}
+/* style for full body--------
+------------------- */
+body{
+    background-color: whitesmoke;
+}
+/* container-----------
+--------------------- */
+.container{
+    width: 870px;
+    background-color: white;
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 20px;
+
+    
+}
+/* media quary for top-blog and top players----------------
+----------------------------------------- */
+
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .top-player .players{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+    .top-blog .blog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img-writing{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-blog h2{
+        text-align: center;
+    }
+}
+@media screen and (min-width:577px) and (max-width:1000px){
+    .container{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .top-player .players{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+}
+}
+@media screen and (min-width:1100px) and (max-width:1200px){
+    .container{
+        width: 100%;
+       margin: 30px 0;
+       
+    
+    }
+}
+/* style of let course part-----------
+---------------------------------- */
+
+.star{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.clk-hr{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-color: lavenderblush;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5px;
+    height: 20px;
+    
+
+}
+.last{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+    
+}
+.let{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    border-top: 30px solid whitesmoke;
+    padding: 30px 50px;
+    
+    
+}
+.let>div{
+    background-color: wheat;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    
+    
+
+}
+@media screen and (max-width:800px){
+    .let{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        
+    }
+    .let>div{
+        padding: 30px;
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    
+    
+}
+
+
